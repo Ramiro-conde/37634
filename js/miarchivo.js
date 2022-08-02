@@ -3,8 +3,8 @@
 
 function convertir(){
  
-  let DolarOficial= "139"
-  let DolarBlue="283"
+  let DolarOficial= "140"
+  let DolarBlue="284"
   let euro="135"
   let resultado="0"
   let valor =parseInt(document.getElementById("valor").value)
