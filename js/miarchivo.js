@@ -1,5 +1,20 @@
 
+class cambio{ 
+      constructor(moneda,precio) {
 
+            this.moneda = moneda;
+            this.precio = precio;
+ }
+}
+ const moneda1= new cambio ("dolar",140);
+ const moneda2= new cambio ("dolar blue", 290);
+ const moneda3= new cambio ("euro", 135);
+ const moneda4= new cambio ("real", 30);
+
+ console.log(moneda1)
+ console.log(moneda2)
+ console.log(moneda3)
+ console.log(moneda4)
 
 function convertir(){
  
