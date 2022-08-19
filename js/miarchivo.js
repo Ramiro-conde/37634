@@ -40,4 +40,10 @@ function convertir(){
   alert("El cambio de pesos a real es:" + resultado)
   
 } else (alert("No se ingreso ningun dato"))
+
 }
+const convertir=document.querySelector(".button")
+
+convertir.addEventListener("click", ()=> {
+      console.log("CONVERTIR")
+})
