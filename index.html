@@ -5,18 +5,100 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="js/miarchivo.js"></script>
+    <script defer src="js/cotizador.js"></script>
+    <scrip defer src="js/app.js"></scrip>
+    <link rel="stylesheet" href="css/bootstrap.css">
     <title>CAMBIO</title>
 </head>
 <body>
+  <header>
     <h2>CASA DE CAMBIO</h2>
+    </header>
+    <main>
      <p>Seleccione la moneda</p>
+     
+     <div class="container">
+        <div class="row">
+          <div>
+     
+            <label for="moneda">Moneda</label>
+             <select name="moneda" id="moneda" class="form-select">
+              <option value="137">Dolar</option>
+              <option>Dolar Blue</option>
+              <option>Euro</option>
+              <option>Libra esterlina</option>
+              <option>Franco Suizo</option>
+              <option>Real</option>
+              <option>Peso Uruguayo</option>
+              <option>Peso Chileno</option>
+             </select>
+             <br>
+             <p>Ingrese el monto en pesos argentinos</p>
+             <input type="number" id="valor" min="1" max="1000000">
+             <button class="button button-outline">COTIZAR</button>
+             <p class="precio">Precio:$<span>0.00</span></p>
+           </div>
+             
+          
+           </div>
+            <div class="col">
+     <table class="table table-dark">
+        <thead>
+          <th>Moneda</th>
+          <th>Compra</th>
+          <th>Venta</th>
+        </thead>
+        <tbody>
+          <tr>
+            <th>Dolar </th>
+            <th>137</th>
+            <th>149</th>
+          </tr>
+          <tr>
+          <th>Dolar Blue</th>
+          <th>288</th>
+          <th>292</th>
+          </tr>
+          <tr>
+          <th>Euro</th>
+          <th>157</th>
+          <th>171</th>
+          </tr>
+          <tr>
+            <th>Libra Esterlina</th>
+            <th>177</th>
+            <th>195</th>
+          </tr>
+          <tr>
+            <th>Franco Suizo</th>
+            <th>133</th>
+            <th>143</th>
+          </tr>
+          <tr>
+            <th>Real</th>
+            <th>26</th>
+            <th>36</th>
+          </tr>
+          <tr>
+            <th>Peso Uruguayo</th>
+            <th>2</th>
+            <th>3</th>
+          </tr>
+          <tr>
+            <th>Peso Chileno</th>
+            <th>0.16</th>
+            <th>0.22</th>
+          </tr>
+          
+          </tr>
+        </tbody>
+    </div>
+  </table>
+     
+    </main>
+    <footer>
 
-     <input type="radio" name="cambio" id="uno">Dolar
-     <input type="radio" name="cambio" id="dos">Dolar Blue
-     <input type="radio" name="cambio" id="tres">Euro
-     <input type="radio" name="cambio" id="cuatro">Real
-     <p>Ingrese el monto en pesos</p>
-     <input type="number" id="valor" min="1" max="1000000">
-     <button class="button">COTIZAR</button>
+
+    </footer>
 </body>
 </html>
